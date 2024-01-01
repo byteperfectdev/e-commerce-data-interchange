@@ -1,0 +1,29 @@
+{
+  "name": "byteperfect/edi",
+  "description": "The plugin provides data interchange between the WooCommerce plugin and 1C.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-only",
+  "homepage": "https://edi.byteperfect.dev/",
+  "authors": [
+    {
+      "name": "Aleksandr Levashov",
+      "email": "aleksandr@byteperfect.dev",
+      "homepage": "https://byteperfect.dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "cmb2/cmb2": "^v2.10",
+    "ext-json": "*"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "BytePerfect\\EDI\\": "src"
+    },
+    "files": [
+      "vendor/cmb2/cmb2/init.php"
+    ]
+  }
+}
